@@ -3,12 +3,22 @@ var router = express.Router();
 
 router.get('/users', function(req, res){
 	res.json({
-		user:{
-			"name":"fulano",
-			"idade":19,
-			"email":"fulano@fulano.com.br",
-			"telefone": "99983948"
-		}
+		users:[
+			{
+				"id": 1,
+				"name":"fulano",
+				"idade":19,
+				"email":"fulano@fulano.com.br",
+				"telefone": "99983948"
+			},
+			{
+				"id": 2,
+				"name":"ciclano",
+				"idade":59,
+				"email":"ciclano@ciclano.com.br",
+				"telefone": "939983948"
+			},
+		]
 	});
 });
 
