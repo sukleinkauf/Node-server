@@ -11,12 +11,17 @@ router.post('/add-users', function(req, res){
 		var checkname=0;
 
 		checkname = file.check(data,params);
+
+		var paramsok= file.includeid(params, data);
+
 		
+
 		if(checkname == false){
 			res.json({'msg':'Usuário já cadastrado!'});
 		}
 		else{
-			data.push(params); //adiciona parametros aos arquivos já existente
+			// file.includeid(data, params);
+			data.push(paramsok); //adiciona parametros aos arquivos já existente
 			var dataJson = JSON.stringify(data) //transforma variavel em Json
 			file.write(dataJson, res);	
 		}

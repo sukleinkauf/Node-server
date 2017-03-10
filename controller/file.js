@@ -22,7 +22,19 @@ module.exports ={
 			return false;
 		}
 	},
-	
+
+	includeid: function(params, data){
+		var tam=data.length;
+		var id=data[tam-1].id+1;
+		console.log(id);
+		Object.defineProperty(params, "id", {
+			get: function () { return id; },
+			set: function (value) { id = value; },
+			enumerable: true
+		});
+		return params;
+	},
+
 	write: function(dataJson, res){
 		fs.writeFile(__dirname + "/../" + 'db/users.json', dataJson, function(err){
 			if(err)
