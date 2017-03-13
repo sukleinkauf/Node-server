@@ -30,7 +30,7 @@ O programa também seta um ID automáticamente aos novos usuários cadastrados.
  
  A aplicação ainda não tem uma view definida e para a realização das requisições de teste recomenda-se a utilização da extensão do Google Chrome: Postman.
  
- ##**Proximos passos:**
+**Proximos passos:**
  
  Pretende-se incluir mais funções a aplicação: Editar usuários cadastrados; Excluir usuários cadastrados.
  
