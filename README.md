@@ -3,6 +3,8 @@
 ##**Descrição:**
 
 versão: 1.0.0 13/03/2017
+
+
 Essa aplicação faz requisições assincronas para um servidor, desenvolvido com node.js. Já é possivel ler usuários cadastrados e adicionar novos usuários.
 O programa também seta um ID automáticamente aos novos usuários cadastrados. 
   
@@ -18,9 +20,6 @@ O programa também seta um ID automáticamente aos novos usuários cadastrados.
 
   ```npm install```
   
-**Rode o comando ```gulp``` no console para criar o servidor:**
- 
- ```gulp ```
  
 ##**Para iniciar a aplicação:**
  
